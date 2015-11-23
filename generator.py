@@ -290,7 +290,7 @@ class DefaultBidGenerator(object):
         else:
             self._adgroup_ids = None
         self._vendor_types = VENDOR_TYPES
-        self._slot_width, self._slot_height = random.choice(DIMENSIONS)
+        self._slot_width, self._slot_height = (1200, 627)
         self._user_agent_list = USER_AGENTS
 
     def GenerateBidRequest(self):

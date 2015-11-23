@@ -18,3 +18,4 @@ test: realtime-bidding_pb2.py
 
 run: clean realtime-bidding_pb2.py
 	./requester.py --requests 1 --url ${GOOGLE_NATIVE_BIDSERVER_URL} --max_qps 10 --google_user_ids_file=google_ids.txt
+	less *.log
